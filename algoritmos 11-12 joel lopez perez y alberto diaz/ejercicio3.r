@@ -1,0 +1,19 @@
+formula_general<-function(a=3,b=8,c=6)
+{
+  q=b^2-4*a*c
+  if(q>0)
+  {
+    w=sqrt(q)
+    e=-b+w
+    r=e/2*a
+    print(r)
+   t=-b-w
+   y=t/2*a
+   print(y)
+  }
+  else
+  {
+    print("no se puede sacar raiz de un numero negativo")
+  }
+}
+formula_general()

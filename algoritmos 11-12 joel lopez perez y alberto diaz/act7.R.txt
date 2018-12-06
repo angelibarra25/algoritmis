@@ -1,0 +1,13 @@
+par1<-function(a=53)
+    {
+    for (i in 1:a){
+        if(i%%2==0){
+            print(i)
+            }
+        else
+            {
+            print("es impar")
+            }
+        }
+    }
+par1()

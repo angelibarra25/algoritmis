@@ -1,0 +1,23 @@
+x1<- c(1,3,5,7,9)
+x2<- c(2,4,6,8,1)
+x3<-c(4,5,6,7,8)
+x4<-c(3,2,4,3,5)
+x5<-c(6,7,5,9,3)
+filas_juntas<-rbind(x1,x2,x3,x4,x5)
+filas_juntas
+
+M1<-matrix(filas_juntas,nrow = 5,ncol = 5,byrow = TRUE)
+a<- array(c(M1),dim = c(5,5,2))
+suma_de_arreglo<-function(x=0){
+  for (i in 1:5) {
+    for (j in 1:5) {
+      if(i==j){
+      x=x+M1[i,j]
+      }
+      
+    }
+    
+  }
+  print(x)
+}
+suma_de_arreglo()

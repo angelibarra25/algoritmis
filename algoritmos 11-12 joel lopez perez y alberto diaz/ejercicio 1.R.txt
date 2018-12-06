@@ -1,0 +1,8 @@
+prueba<-function(a=3, b=7, c=6)
+{
+    j="joel_alberto"
+ y=a+b*c
+ print(y)
+ print(j)
+ }
+prueba()

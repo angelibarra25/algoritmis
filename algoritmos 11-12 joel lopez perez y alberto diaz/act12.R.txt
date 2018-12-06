@@ -1,0 +1,17 @@
+numeros_primos<- function(num)
+{
+  current<-num
+  ret.vals<-vector()
+  x<- 2
+  while(x<=num-1){
+    while (current%%x==0) {
+      current<-current/x
+      ret.vals<-c(ret.vals,x)
+      
+    }
+    x<-x+1
+  }
+  if(is.logical(ret.vals))return(num) else return(ret.vals)
+  
+}
+numeros_primos(12)
